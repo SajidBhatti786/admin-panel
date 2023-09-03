@@ -9,7 +9,7 @@ import Dashboard from "./scenes/dashboard";
 import Team from "./scenes/Team";
 import Invoices from "./scenes/Invoices";
 import Contact from "./scenes/Constact";
-import Bar from "./scenes/Bar";
+import Bar from "./components/Bar";
 import Form from "./scenes/Form";
 import Line from "./scenes/Line";
 import Pie from "./scenes/Pie";
