@@ -76,7 +76,7 @@ function Sidebar() {
         }}
       >
         <MySidebar
-          className="sidebar"
+          // className="sidebar"
           collapsed={isCollapsed}
           backgroundColor={colors.primary[400]}
           height="100vh"

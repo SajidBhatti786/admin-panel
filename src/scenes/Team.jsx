@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, useTheme, typography } from "@mui/material";
+import { Box, useTheme, Typography } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { tokens } from "../theme";
 import { mockDataTeam } from "../data/mockData";
@@ -42,14 +42,69 @@ function Team() {
     },
     {
       field: "access",
-      headerName: "Role",
+      headerName: "Acess Level",
       flex: 1,
+      renderCell: ({ row: { access } }) => {
+        return (
+          <Box
+            width="60%"
+            m="0 auto"
+            P="0.2rem"
+            display="flex"
+            justifyContent="center"
+            backgroundColor={
+              access === "Admin"
+                ? colors.greenAccent[600]
+                : colors.greenAccent[700]
+            }
+            borderRadius="5px"
+          >
+            {access === "admin" && <AdminPanelSettingsOutlined />}
+            {access === "manager" && <SecurityOutlined />}
+            {access === "user" && <LockOpenOutlined />}
+            <Typography color={colors.grey[100]} sx={{ ml: "0.2rem" }}>
+              {access}
+            </Typography>
+          </Box>
+        );
+      },
     },
   ];
   return (
-    <Box margin="0.5rem 1rem">
+    <Box m="0.5rem 1rem">
       <Header title="TEAM" subtitle="Managing the team members" />
-      <DataGrid rows={mockDataTeam} columns={columns} />
+      <Box
+        margin="0.5rem 1rem"
+        m="2rem 0 0 0"
+        height="75vh"
+        sx={{
+          "& .MuiDataGrid-root": {
+            border: "none",
+          },
+          "& .MuiDataGrid-cell": {
+            borderBottom: "none",
+          },
+          "& .name-column--cell": {
+            color: colors.greenAccent[300],
+          },
+          "& .MuiDataGrid-columnHeaders": {
+            backgroundColor: colors.blueAccent[700],
+            borderBottom: "none",
+          },
+          "& .MuiDataGrid-virtualScroller": {
+            backgroundColor: colors.primary[400],
+          },
+          "& .MuiDataGrid-footerContainer": {
+            borderTop: "none",
+            backgroundColor: colors.blueAccent[700],
+          },
+          "& .MuiCheckbox-root": {
+            color: `${colors.greenAccent[200]} !important`,
+          },
+        }}
+      >
+        <DataGrid rows={mockDataTeam} columns={columns} />
+      </Box>
     </Box>
   );
 }
