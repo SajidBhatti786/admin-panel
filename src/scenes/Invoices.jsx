@@ -86,6 +86,7 @@ function Invoices() {
       >
         <DataGrid
           rows={mockDataInvoices}
+          checkboxSelection
           columns={columns}
           components={{ Toolbar: GridToolbar }}
         />
