@@ -34,6 +34,7 @@ export const tokens = (mode) => ({
           300: "#94e2cd",
           400: "#70d8bd",
           500: "#4cceac",
+
           600: "#3da58a",
           700: "#2e7c67",
           800: "#1e5245",
@@ -165,29 +166,35 @@ export const themeSettins = (mode) => {
     typography: {
       fontfamily: ["Source Sans Pro", "sans-serif"].join(","),
       fontSize: 12,
+      Link: {
+        textDecoration: "none",
+        fontSize: 12,
+        fontfamily: ["Source Sans Pro", "sans-serif"].join(","),
+        color: colors.primary[500],
+      },
       h1: {
         fontfamily: ["Source Sans Pro", "sans-serif"].join(","),
-        fontSize: 40,
+        fontSize: "1.8rem",
       },
       h2: {
         fontfamily: ["Source Sans Pro", "sans-serif"].join(","),
-        fontSize: 32,
+        fontSize: "1.5rem",
       },
       h3: {
         fontfamily: ["Source Sans Pro", "sans-serif"].join(","),
-        fontSize: 24,
+        fontSize: "1.4rem",
       },
       h4: {
         fontfamily: ["Source Sans Pro", "sans-serif"].join(","),
-        fontSize: 20,
+        fontSize: "1.3rem",
       },
       h5: {
         fontfamily: ["Source Sans Pro", "sans-serif"].join(","),
-        fontSize: 16,
+        fontSize: "1.2rem",
       },
       h6: {
         fontfamily: ["Source Sans Pro", "sans-serif"].join(","),
-        fontSize: 14,
+        fontSize: "1rem",
       },
     },
   };

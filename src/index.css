@@ -3,7 +3,7 @@
 html,
 body,
 #root,
-.app.content {
+.app .content {
   height: 100%;
   width: 100%;
   font-family: "source-sans-pro", sans-serif;
@@ -11,6 +11,7 @@ body,
 .app {
   display: flex;
   position: relative;
+  width: 100%;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -23,4 +24,12 @@ body,
 }
 ::-webkit-scrollbar-track:hover {
   background: #555;
+}
+.sidebar {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none !important;
 }
