@@ -46,9 +46,7 @@ function Sidebar() {
 
   return (
     <div
-      style={{
-        backgroundColor: "black !important",
-      }}
+   
       className="sidebar"
     >
       <Box
