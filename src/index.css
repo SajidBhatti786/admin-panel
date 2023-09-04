@@ -16,9 +16,11 @@ body,
   display: flex;
   position: relative;
   width: 100%;
+  overflow-y: hidden;
+  height: 100vh;
 }
 ::-webkit-scrollbar {
-  width: 10px;
+  display: none;
 }
 ::-webkit-scrollbar-track {
   background: #e0e0e0;
@@ -29,11 +31,19 @@ body,
 ::-webkit-scrollbar-track:hover {
   background: #555;
 }
-.sidebar {
+.sidebar,
+.content {
   height: 100vh;
-  overflow-y: scroll;
+  overflow-y: scroll !important;
+}
+.sidebar {
+  height: 100%;
+  /* width: 100%; */
+  padding: 0rem 1rem 0rem 0rem !important;
+  font-family: "source-sans-pro", sans-serif;
 }
 
-.sidebar::-webkit-scrollbar {
+.sidebar::-webkit-scrollbar,
+.content::-webkit-scrollbar {
   display: none !important;
 }

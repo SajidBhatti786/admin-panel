@@ -49,6 +49,7 @@ function Sidebar() {
       style={{
         backgroundColor: "black !important",
       }}
+      className="sidebar"
     >
       <Box
         sx={{
@@ -76,7 +77,7 @@ function Sidebar() {
         }}
       >
         <MySidebar
-          // className="sidebar"
+          className="sidebar"
           collapsed={isCollapsed}
           backgroundColor={colors.primary[400]}
           height="100vh"
