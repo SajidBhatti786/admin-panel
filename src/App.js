@@ -16,9 +16,10 @@ import Pie from "./scenes/Pie";
 import Faq from "./scenes/Faq";
 import Geography from "./scenes/Geography";
 import Calendar from "./scenes/Calendar";
-
+import { useState } from "react";
 function App() {
   const [theme, colorMode] = useMode();
+
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
