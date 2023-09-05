@@ -45,10 +45,7 @@ function Sidebar() {
   const [selected, setSelected] = useState("dashboard");
 
   return (
-    <div
-   
-      className="sidebar"
-    >
+    <div className="sidebar">
       <Box
         sx={{
           "& .pro-sidebar": {
@@ -61,7 +58,7 @@ function Sidebar() {
             backgroundColor: "transparent !important",
           },
           "& .pro-inner-item": {
-            padding: "5px 35px 5px 20px !important",
+            // padding: "5px 35px 5px 20px !important",
           },
           "& .pro-inner-item:hover": {
             // color: `${colors.grey[700]} !important`,
@@ -75,7 +72,7 @@ function Sidebar() {
         }}
       >
         <MySidebar
-          className="sidebar"
+          // className="sidebar"
           collapsed={isCollapsed}
           backgroundColor={colors.primary[400]}
           height="100vh"

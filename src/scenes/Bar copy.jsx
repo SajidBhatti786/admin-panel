@@ -1,19 +1,19 @@
 import { Box } from "@mui/material";
 import Header from "../components/Header";
-import LineChart from "../components/LineChart";
+import BarChart from "../components/BarChart";
 
-const Line = () => {
+const Bar = () => {
   return (
     <Box m="0.5rem 1rem">
       <Header
-        title="Line Chart"
-        subtitle="Line Chart to visualize the business"
+        title="Bar Chart"
+        subtitle="Bar Chart to visualize the business"
       />
       <Box height="75vh">
-        <LineChart />
+        <BarChart />
       </Box>
     </Box>
   );
 };
 
-export default Line;
+export default Bar;

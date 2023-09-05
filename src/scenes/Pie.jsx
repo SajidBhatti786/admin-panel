@@ -1,11 +1,19 @@
-import React from "react";
+import { Box } from "@mui/material";
+import Header from "../components/Header";
+import PieChart from "../components/PieChart";
 
-function Pie() {
+const Pie = () => {
   return (
-    <div>
-      <h1>Pie here.</h1>
-    </div>
+    <Box m="0.5rem 1rem">
+      <Header
+        title="Pie Chart"
+        subtitle="Pie Chart to visualize the business"
+      />
+      <Box height="75vh">
+        <PieChart />
+      </Box>
+    </Box>
   );
-}
+};
 
 export default Pie;

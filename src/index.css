@@ -20,13 +20,15 @@ body,
   height: 100vh;
 }
 ::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
+  width: 0.6rem;
 }
 ::-webkit-scrollbar-track {
   background: #e0e0e0;
 }
 ::-webkit-scrollbar-thumb {
   background: #888;
+  border-radius: 0.5rem;
 }
 ::-webkit-scrollbar-track:hover {
   background: #555;
@@ -38,12 +40,24 @@ body,
 }
 .sidebar {
   height: 100%;
-  /* width: 100%; */
+  width: auto;
+  /* width: 20%; */
   padding: 0rem 1rem 0rem 0rem !important;
+  margin: 0 !important;
+  /* padding: 0 !important; */
   font-family: "source-sans-pro", sans-serif;
 }
 
 .sidebar::-webkit-scrollbar,
 .content::-webkit-scrollbar {
   display: none !important;
+}
+.transaction-container::-webkit-scrollbar {
+  display: block !important;
+}
+.transaction-container::-webkit-scrollbar-thumb {
+  background: #888 !important;
+}
+.transaction-container::-webkit-scrollbar-track {
+  background: #e0e0e0 !important;
 }

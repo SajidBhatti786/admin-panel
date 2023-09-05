@@ -156,8 +156,8 @@ export default function Calendar() {
             dayMaxEvents={true}
             select={handleDateClick}
             eventClick={handleEventClick}
-            events={currentEvents}
-            eventDrop={handleEventDrop}
+            events={currentEvents} // events that are shown on calendar
+            eventDrop={handleEventDrop} //when event is dragged from one date to another
           />
         </Box>
       </Box>
