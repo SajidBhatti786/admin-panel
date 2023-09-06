@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# React Admin Panel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the React Admin Panel repository! This admin panel is built using ReactJS and incorporates several libraries such as FullCalendar, NivoCharts, and React-Pro-Sidebar. It provides a comprehensive platform for managing various aspects of your business operations.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+Here's an overview of the key features included in this admin panel:
 
-### `npm start`
+### Dashboard
+- View recent transactions.
+- Monitor sales growth and trends.
+- Visualize sales data with bar charts and geographical charts.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Team Management
+- Manage users, admins, and managers.
+- Streamline team operations.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Invoices
+- Easily handle invoices for your business.
 
-### `npm test`
+### Contacts
+- Maintain a directory of employee contacts.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### FAQ Section
+- Create and manage frequently asked questions.
 
-### `npm run build`
+### Forms
+- Create new users and gather essential information.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Charts
+- Utilize line, bar, pie, and geographical charts for data visualization.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Calendar
+- Add, remove, and edit events.
+- Real-time day grid month view.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+To get started with the React Admin Panel, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository: `git clone https://github.com/sajidbhatti786/admin-panel.git`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install dependencies: `npm install`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Start the development server: `npm start`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
 
-## Learn More
+If you'd like to contribute to this project, please follow these guidelines:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Fork the repository.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Create a new branch for your feature or bug fix: `git checkout -b feature-name`
 
-### Code Splitting
+3. Make your changes and commit them: `git commit -m 'Add feature XYZ'`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. Push your changes to your fork: `git push origin feature-name`
 
-### Analyzing the Bundle Size
+5. Create a pull request to the main repository's `main` branch.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgments
 
-### Advanced Configuration
+- Special thanks to the authors of the libraries used in this project.
+- Inspired by the need for an efficient admin panel for managing business operations.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to reach out with any questions or feedback!
